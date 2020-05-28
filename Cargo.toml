@@ -1,0 +1,16 @@
+[package]
+name = "pyo3bug"
+version = "0.1.0"
+authors = ["Manuel Vázquez Acosta <manuel@merchise.org>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "pyo3bug"
+crate-type = ["cdylib"]
+
+
+[dependencies.pyo3]
+git = "https://github.com/PyO3/pyo3"
+features = ["extension-module", "python3"]
